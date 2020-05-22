@@ -18,7 +18,7 @@ import javax.annotation.Nullable;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class KingProfession {
+public class KingProfession  {
 
 public static VillagerProfession king;
      public static void CreateKingProfession(PointOfInterestType poi) {
@@ -27,7 +27,7 @@ public static VillagerProfession king;
     }
 
 
-    // Code from CAS_ual_TY found here : https://www.minecraftforge.net/forum/topic/79434-1144-villagers-professions-fix-trades/
+
 
     private static Method professionInjector;
 
