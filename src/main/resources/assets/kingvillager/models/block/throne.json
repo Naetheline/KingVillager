@@ -1,8 +1,151 @@
 {
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "block/diamond_block",
-    "top": "block/diamond_block",
-    "side": "block/diamond_block"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "cfm:block/sofa_single",
+	"textures": {
+		"0": "block/diamond_block",
+		"1": "block/red_wool",
+		"particle": "block/diamond_block"
+	},
+	"elements": [
+		{
+			"name": "Poltrona",
+			"from": [0, 0, 0],
+			"to": [16, 7, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2, 8]},
+			"faces": {
+				"north": {"uv": [0, 9, 16, 16], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [0, 9, 16, 16], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [0, 9, 16, 16], "texture": "#0", "cullface": "south"},
+				"west": {"uv": [0, 9, 16, 16], "texture": "#0", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Poltrona",
+			"from": [0, 7, 0],
+			"to": [16, 21, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 14], "texture": "#0"},
+				"east": {"uv": [13, 0, 16, 14], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 3, 14], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 3], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Poltrona",
+			"from": [0, 10, 3],
+			"to": [16, 21, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 9]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 11], "texture": "#0"},
+				"east": {"uv": [15, 0, 16, 11], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 11], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 11], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Poltrona",
+			"from": [0, 7, 3],
+			"to": [16, 10, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2, 9]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 11], "texture": "#0"},
+				"east": {"uv": [14, 5, 15, 8], "texture": "#0"},
+				"south": {"uv": [0, 7, 16, 10], "texture": "#0"},
+				"west": {"uv": [2, 2, 3, 5], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Poltrona",
+			"from": [0, 7, 4],
+			"to": [2, 11, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8]},
+			"faces": {
+				"north": {"uv": [12, 0, 16, 4], "texture": "#0"},
+				"east": {"uv": [1, 0, 13, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 4], "texture": "#0"},
+				"west": {"uv": [4, 0, 16, 4], "texture": "#0", "cullface": "west"},
+				"up": {"uv": [0, 4, 2, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Poltrona",
+			"from": [14, 7, 4],
+			"to": [16, 11, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 15, 4], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [14, 0, 16, 4], "texture": "#0"},
+				"west": {"uv": [3, 0, 15, 4], "texture": "#0"},
+				"up": {"uv": [14, 4, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Almofada",
+			"from": [2.25, 7, 4],
+			"to": [13.75, 18.75, 4.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 12, 12], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 0, 1, 12], "texture": "#1", "cullface": "east"},
+				"south": {"uv": [0, 0, 12, 12], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [0, 0, 1, 12], "texture": "#1", "cullface": "west"},
+				"up": {"uv": [0, 0, 12, 1], "texture": "#1"},
+				"down": {"uv": [0, 0, 12, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Almofada",
+			"from": [2.25, 7, 3.5],
+			"to": [13.75, 7.25, 15.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 7.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 12, 1], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 0, 12, 1], "texture": "#1", "cullface": "east"},
+				"south": {"uv": [0, 0, 12, 1], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [0, 0, 12, 1], "texture": "#1", "cullface": "west"},
+				"up": {"uv": [0, 0, 12, 12], "texture": "#1"},
+				"down": {"uv": [0, 0, 12, 12], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 315, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 315, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [0, -1, 0],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 6, 0]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
+		}
+	}
 }
