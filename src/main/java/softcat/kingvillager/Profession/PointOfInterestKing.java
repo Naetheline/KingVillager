@@ -49,7 +49,6 @@ public class PointOfInterestKing  {
     {
         try
         {
-            System.out.println("-----------------------------------------------" + POIInjector.toString() + "--------------------------------------------");
            Object poit =  POIInjector.invoke(null, name, stateSet, dist, number);
            if(poit instanceof  PointOfInterestType) {
                return (PointOfInterestType) poit;

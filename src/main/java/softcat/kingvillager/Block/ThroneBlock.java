@@ -9,6 +9,8 @@ import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.Half;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.gen.feature.structure.PlainsVillagePools;
+import net.minecraft.world.gen.feature.structure.VillagePieces;
 
 public class ThroneBlock extends Block {
 
@@ -20,13 +22,13 @@ public class ThroneBlock extends Block {
     }
 
 
-
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         Direction direction = context.getFace();
         BlockPos blockpos = context.getPos();
         BlockState blockstate = this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing());
         return blockstate;
     }
+
 
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
