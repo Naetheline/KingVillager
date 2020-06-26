@@ -35,7 +35,7 @@ public class PointOfInterestKing  {
     {
         try
         {
-            POIInjector = PointOfInterestType.class.getDeclaredMethod("func_226359_a_", String.class, Set.class, int.class, int.class);
+            POIInjector = PointOfInterestType.class.getDeclaredMethod("register", String.class, Set.class, int.class, int.class);
             POIInjector.setAccessible(true);
 
         }
