@@ -1,12 +1,10 @@
 package softcat.kingvillager.Block;
 
 import net.minecraft.block.*;
-import net.minecraft.fluid.Fluids;
-import net.minecraft.fluid.IFluidState;
+
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
-import net.minecraft.state.properties.Half;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 

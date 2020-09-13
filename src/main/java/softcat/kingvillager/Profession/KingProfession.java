@@ -35,7 +35,7 @@ public static VillagerProfession king;
     {
         try
         {
-            professionInjector = VillagerProfession.class.getDeclaredMethod("func_226556_a_", String.class, PointOfInterestType.class, SoundEvent.class);
+            professionInjector = VillagerProfession.class.getDeclaredMethod("register", String.class, PointOfInterestType.class, SoundEvent.class);
             professionInjector.setAccessible(true);
 
         }
