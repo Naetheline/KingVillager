@@ -4,6 +4,7 @@ package softcat.kingvillager.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.merchant.villager.VillagerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -18,7 +19,6 @@ import softcat.kingvillager.KingVillagerMod;
 @ObjectHolder(KingVillagerMod.MOD_ID)
 public class BlockRegistration {
 
-
     public static final Block throne = null;
 
     @SubscribeEvent
@@ -26,7 +26,7 @@ public class BlockRegistration {
 
         event.getRegistry().registerAll(
 
-                new ThroneBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(3).sound(SoundType.METAL)).setRegistryName(KingVillagerMod.MOD_ID, "throne")
+                new ThroneBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(4).notSolid().sound(SoundType.METAL)).setRegistryName(KingVillagerMod.MOD_ID, "throne")
 
         );
     }
