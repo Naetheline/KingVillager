@@ -24,15 +24,4 @@ public class KingProfession extends VillagerProfession  {
     public KingProfession( PointOfInterestType poiType) {
         super("king", poiType, ImmutableSet.of(Items.GOLD_NUGGET), ImmutableSet.of(BlockRegistration.throne), SoundEvents.BLOCK_METAL_PLACE);
     }
-
-
-    /*
-     private final String name;
-    private final PointOfInterestType pointOfInterest;
-    private final ImmutableSet<Item> specificItems;
-    private final ImmutableSet<Block> relatedWorldBlocks;
-    @Nullable
-    private final SoundEvent sound;
-     */
-
 }
