@@ -15,7 +15,7 @@ public class TradesRegistration {
     @SubscribeEvent
     public static void registerTrades(VillagerTradesEvent event){
 
-        if(event.getType() == KingProfession.king)
+        if(event.getType() == ProfessionRegistration.king)
         {
             event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(2).setForSale(Items.IRON_INGOT, 1, 2).build()));
             event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.GOLD_NUGGET, 8,16).setForSale(Items.EMERALD, 1, 1).build()));

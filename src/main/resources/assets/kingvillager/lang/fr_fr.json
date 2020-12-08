@@ -1,7 +1,7 @@
 {
   "block.kingvillager.throne": "Trône",
   "item.kingvillage.throne": "Trône",
-  "entity.minecraft.villager.king" : "Roi"
+  "entity.minecraft.villager.kingvillager.king" : "Roi"
   
 
 }

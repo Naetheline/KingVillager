@@ -18,52 +18,21 @@ import javax.annotation.Nullable;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class KingProfession  {
+public class KingProfession extends VillagerProfession  {
 
-public static VillagerProfession king;
-     public static void CreateKingProfession(PointOfInterestType poi) {
-       king = injectProfession("king", poi, null);
 
+    public KingProfession( PointOfInterestType poiType) {
+        super("king", poiType, ImmutableSet.of(Items.GOLD_NUGGET), ImmutableSet.of(BlockRegistration.throne), SoundEvents.BLOCK_METAL_PLACE);
     }
 
 
-
-
-    private static Method professionInjector;
-
-    static
-    {
-        try
-        {
-            professionInjector = VillagerProfession.class.getDeclaredMethod("register", String.class, PointOfInterestType.class, SoundEvent.class);
-            professionInjector.setAccessible(true);
-
-        }
-        catch (NoSuchMethodException | SecurityException e)
-        {
-            e.printStackTrace();
-        }
-    }
-
-    public static VillagerProfession injectProfession(String name, PointOfInterestType poiType, @Nullable SoundEvent soundEvent)
-    {
-        try
-        {
-           Object king = professionInjector.invoke(null, name, poiType, soundEvent);
-           if(king instanceof  VillagerProfession)
-           {
-               return (VillagerProfession) king;
-           }
-           else
-           {
-               throw new IllegalArgumentException("Expected VillagerProfesssion");
-           }
-        }
-        catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e)
-        {
-            e.printStackTrace();
-        }
-        return null;
-    }
+    /*
+     private final String name;
+    private final PointOfInterestType pointOfInterest;
+    private final ImmutableSet<Item> specificItems;
+    private final ImmutableSet<Block> relatedWorldBlocks;
+    @Nullable
+    private final SoundEvent sound;
+     */
 
 }
