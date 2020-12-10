@@ -63,36 +63,28 @@ public class ProfessionRegistration {
     {
         try
         {
-            // PointOfInterestType.registerBlockStates(kingpoi);
-
 
             injectWorkstation = PointOfInterestType.class.getDeclaredMethod("registerBlockStates", PointOfInterestType.class);
             injectWorkstation.setAccessible(true);
             injectWorkstation.invoke(kingpoi, kingpoi);
 
-            /*
 
-            workstationsInjector = PointOfInterestType.class.getDeclaredField("WORKSTATIONS");
-
-            System.out.println( "************** " + Registry.VILLAGER_PROFESSION.toString());
-
-            workstationsInjector.setAccessible(true);
-
-            FieldUtils.writeField(workstationsInjector,Suppliers.memoize(() -> {
-                return (Set) Registry.VILLAGER_PROFESSION.stream().map(VillagerProfession::getPointOfInterest).collect(Collectors.toSet());
-            }), true );
-
-            System.out.println( "************** " + workstationsInjector.toString());
-            */
-
-            //workstationsInjector.setAccessible(true);
-
-            // workstationsInjector.set(Supplier<Set<PointOfInterestType>>().class);
 
         }
         catch (NoSuchMethodException | SecurityException | InvocationTargetException | IllegalAccessException e)
         {
-            e.printStackTrace();
+            try
+            {
+                injectWorkstation = PointOfInterestType.class.getDeclaredMethod("func_221052_a", PointOfInterestType.class);
+                injectWorkstation.setAccessible(true);
+                injectWorkstation.invoke(kingpoi, kingpoi);
+                e.printStackTrace();
+            }
+            catch (NoSuchMethodException | SecurityException | InvocationTargetException | IllegalAccessException er) {
+
+                er.printStackTrace();
+
+            }
         }
     }
 
