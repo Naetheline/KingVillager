@@ -34,7 +34,7 @@ authors="Softcat Team" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 Meet the King of the Villagers! 
-Maybe if you're nice and generious enough... he will agree to trade some of his treasure with you.'''
+Maybe if you're nice and generous enough... he will agree to trade some of his treasure with you.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.kingvillager]] #optional
     # the modid of the dependency
