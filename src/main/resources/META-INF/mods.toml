@@ -20,7 +20,7 @@ modId="kingvillager" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
-displayName="The King of the villagers" #mandatory
+displayName="The King of the Villagers" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 # updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -33,8 +33,8 @@ credits="Thanks to you for downloading this mod !" #optional
 authors="Softcat Team" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Meet the king of the villagers. 
-Maybe he will agree to trade some of his treasure with you.'''
+Meet the King of the Villagers! 
+Maybe if you're nice and generious enough... he will agree to trade some of his treasure with you.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.kingvillager]] #optional
     # the modid of the dependency
